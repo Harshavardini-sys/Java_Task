@@ -7,18 +7,27 @@ abstract class Shape{
 }
 
 class Circle extends Shape{
-	double area() {
-		double r=2;
-		double area = 2 * 3.14 * r ;
-		return area;
-	}
+	 double r;
+
+	    Circle(double r) {
+	        this.r = r;
+	    }
+
+	    @Override
+	    double area() {
+	        return 3.14 * r * r;
+	    }
 }
 
 class Rectangle extends Shape{
+	double l, b ;
+	Rectangle(double l , double b) {
+		this.l = l;
+		this.b = b;
+	}
+	@Override
 	double area() {
-		double l =1, b=3 ;
-		double area = l * b ;
-		return area;
+		return l*b;
 	}
 }
 
@@ -29,9 +38,9 @@ public class Task1i {
 		new Task1i();
 	}
 	Task1i() {
-		Circle obj = new Circle();
+		Circle obj = new Circle(20.0);
 		System.out.println(obj.area());
-		Rectangle obj1 = new Rectangle();
+		Rectangle obj1 = new Rectangle(10 , 20);
 		System.out.println(obj1.area());
 	}
 
