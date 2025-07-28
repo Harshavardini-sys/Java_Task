@@ -14,10 +14,10 @@ public class Task3 extends Thread {
 	}
 	// part two where we join the thread
 	public static void main(String[] args) {
-		Task3 thread1 = new Task3();
-		thread1.start();
+		Task3 t1 = new Task3();
+		t1.start();
 		try {
-			thread1.join(); // now the thread will join after completion of first thread
+			t1.join(); // now the thread will join after completion of first thread
 		}
 		catch(InterruptedException ex) {
 			System.out.println("Thread Interrupted");
