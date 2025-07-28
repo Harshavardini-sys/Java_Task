@@ -16,6 +16,6 @@ class Vehicle {
 }
 	class Bus extends Vehicle {
 		//void engineType() {
-		//	System.out.println("Diesel");
+		//	System.out.println("Diesel");}
 	}
-
+	
