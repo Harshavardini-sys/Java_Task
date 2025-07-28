@@ -1,25 +1,26 @@
 package Exceptions;
 
-abstract class Shape1{
-	abstract void displayShapeType();
+interface RemoteControl{
+	void turnOn();
 	
-	void display() {
-		System.out.println("Dispaly non- abstarct method");
+	default void batteryStatus() {
+		System.out.println("batter status 100% ");
 	}
 }
- class D extends Shape1{
-	 public void displayShapeType() {
-		 System.out.println("abstract method");
-	 }
- }
+
+class Tv implements RemoteControl{
+	public void turnOn() {
+		System.out.println("Tv turn on");
+	}
+}
 
 public class Task2 {
-	
+
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		D obj = new D();
-		obj.displayShapeType();
-		obj.display();
+		Tv obj = new Tv();
+		obj.batteryStatus();
+		obj.turnOn();
 	}
 
 }

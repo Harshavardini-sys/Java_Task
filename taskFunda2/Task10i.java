@@ -1,4 +1,4 @@
-package task1;
+package taskFunda2;
 
 import java.util.Arrays;
 import java.util.Scanner;

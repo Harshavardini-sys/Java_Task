@@ -1,4 +1,4 @@
-package task1;
+package taskFunda2;
 
 public class Task5i {
 

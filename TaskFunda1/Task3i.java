@@ -1,3 +1,4 @@
+package TaskFunda1;
 
 public class Task3i {
 	public static void main(String[] args) {
