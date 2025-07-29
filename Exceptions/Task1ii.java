@@ -1,4 +1,4 @@
-package Exceptions;
+package exceptions;
 
 abstract class Shape1{
 	abstract void displayShapeType();

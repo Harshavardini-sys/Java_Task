@@ -1,4 +1,4 @@
-package Exceptions;
+package exceptions;
 
 interface Printable{
 	void print();
