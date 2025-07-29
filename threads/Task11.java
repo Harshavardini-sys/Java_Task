@@ -16,8 +16,8 @@ class Task11 extends Thread {
 		 }
 	 }
 	 public static void main(String[] args) {
-	 new Task11("A").start();
-	 new Task11("B").start();
-	 new Task11("C").start();
+		 new Task11("A").start();
+		 new Task11("B").start();
+		 new Task11("C").start();
 	 }
 	}
