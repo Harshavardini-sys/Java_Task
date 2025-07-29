@@ -1,8 +1,8 @@
 package threads;
 
 class Task11 extends Thread {
-	 public Task11(String name) {
-		 super(name);
+	 public Task11(String str) {
+		 super(str);
 	 }
 	 public void run() {
 		 for(int i = 1; i <= 5; i++) {
